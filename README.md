@@ -8,3 +8,40 @@
 * In Eclipce: Click Finish
 * For run:
   * Right click on *_SmartLib/src_* folder and click Run as Java application. If failed right click on root project and clikc "Maven/Install Maven" or "Maven/Update MavenProject" 
+
+
+Description:
+* The code is structured as a Java program for managing a library system. Let's break down its presentation:
+
+* Header Comments: The file starts with a block comment providing essential information about the class, including its purpose, authors, and any other relevant details.
+
+* Package Declaration: It's in the package SmartLib, suggesting it's part of a larger library management system.
+
+* Imports: The code imports necessary Java classes like Scanner, ArrayList, and Date for handling user input, collections, and date manipulation, respectively.
+
+* Class Declaration: The Menu class is declared, which serves as the main operational class for the library system.
+
+* Enums: Two enums are defined: MenuMode and ClassType. These enums provide a convenient way to represent different menu modes and user types within the system.
+
+* Global Variables: Global variables such as curUser, sc, userList, itemList, and curMode are declared to manage the current user, input scanner, user and item lists, and the current menu mode, respectively.
+
+* Constructor: The class constructor initializes various variables and reads user and item data from files using DbFileOper.
+
+* Menu Methods: The MainMenu method is the main entry point, presenting different menus based on the current mode. It contains a loop to continuously display the menu until the user chooses to exit.
+
+* Login Operations: Methods like LoginMenu handle user authentication by prompting for ID and password and validating them against stored user data.
+
+* Admin, Worker, and Customer Operations: Separate methods handle operations specific to admins, workers, and customers. These include adding users/items, removing users/items, finding users/items, changing passwords, etc.
+
+* Input Handling: Methods like MenuOptionChoiceRead handle user input by ensuring it's within specified ranges and catching input mismatch exceptions.
+
+* Service Operations: Methods like AddUserToList, RemoveUser, FindUser, and FindItem provide various services related to users and items.
+
+* Error Handling and Status Printing: The code includes error handling mechanisms to deal with invalid input and failed operations. It also prints status messages indicating whether operations succeed or fail.
+
+* Other Operations: There are methods for updating user information, giving and returning items, and checking the list of items taken by customers.
+
+* Conclusion: The code concludes with a well-structured and organized presentation, separating different functionalities into methods and providing comments for clarity and understanding.
+
+
+
